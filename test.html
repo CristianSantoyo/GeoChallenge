@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="3">
+        3
+    </div>
+    <div id="6q5qw">
+        6
+    </div>
+    <div id="9">
+        9
+    </div>
+    <div id="11">
+        10
+    </div>
+    
+    <script>
+        var lista = ["3", "6", "9", "10"]; 
+
+        lista.forEach(element => {            
+            let a = document.getElementById(element);            
+            // Y se le hace la wea que se necesita
+            if(a){
+                a.appendChild(createDiv('etiqueta'));
+            }            
+        });
+        
+        function createDiv(name) {
+            let div = document.createElement('div');
+            div.className = name;
+            div.innerHTML = `<input type="text">`;
+            return div;
+        }
+
+    </script>
+</body>
+</html>

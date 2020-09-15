@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+        @font-face {
+            font-family: SuperCell;
+            src: url(letra.ttf);
+        }
+
+        #juego {
+            width: 700px;
+            height: 700px;
+        }
+        .anuncio {
+            display: none;
+            position: absolute;
+        }
+        .anuncioDiv {
+            display: none;
+            position: absolute;
+            text-align: center;
+            font-family: SuperCell;            
+            width: 300px;
+        }
+        .anuncioDiv span {                     
+            color: rgb(248, 212, 6);
+            text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;          
+        }
+        #textoBonus  { 
+            color: white;
+            text-shadow: -1px -1px 1px #333, 1px -1px 1px #333, -1px 1px 1px #333, 1px 1px 1px #333;           
+        }
+    </style>
+    <title>Testing Games</title>
+</head>
+<body>
+    <h1>JuegoBanderas Test</h1>
+    <img  src="images/juegos/go.png">
+    <img src="images/juegos/go.png">
+    <img src="images/juegos/go.png">
+    <img src="images/juegos/go.png">
+    <p id="parrafoWonito"></p>
+    <center>
+        <div id="juego">
+            <img id="num1" class="anuncio" src="images/juegos/1.png">
+            <img id="num2" class="anuncio" src="images/juegos/2.png">
+            <img id="num3" class="anuncio" src="images/juegos/3.png">
+            <img id="go" class="anuncio" src="images/juegos/go.png">
+            <img id="tiempoMuerto" class="anuncio" src="images/juegos/tiempoMuerto.png">
+
+            <img id="correcto" class="anuncio" src="images/juegos/correcto.png">
+            <img id="incorrecto" class="anuncio" src="images/juegos/incorrecto.png">
+            <img id="bonusTiempo" class="anuncio" src="images/juegos/bonusTiempo.png">
+            
+            <div id="bonusPuntaje" class="anuncioDiv">
+                <span>Bonus por tiempo: </span> 
+                <span id="textoBonus"></span>
+            </div>
+            
+            <img id="pointerClick" class="anuncio" src="images/juegos/pointerClick.png">
+            <img id="pointerCorrecto" class="anuncio" src="images/juegos/pointerCorrecto.png">
+            <canvas id="canvas" width="700px" height="700px"></canvas>
+        </div>
+    </center>
+    <img src="images/juegos/go.png">
+    <img  src="images/juegos/go.png">
+    <img  src="images/juegos/go.png">
+    <img  src="images/juegos/go.png">
+
+
+    <script src="jquery/jquery.js"></script>
+    <script src="jquery/jquery.linq.min.js"></script>
+    <script src="jquery/jquery-ui.min.js"></script>
+
+    <script src="scripts/primitivos/Juego.js"></script>
+    <script src="scripts/primitivos/ObjetoDibujable.js"></script>
+    <script src="scripts/primitivos/Opcion.js"></script>
+    <script src="scripts/primitivos/Enunciado.js"></script>
+
+    <script src="scripts/juegos/juegoBanderas/Bandera.js"></script>
+    <script src="scripts/juegos/juegoBanderas/JBController.js"></script>
+    <script src="scripts/juegos/juegoBanderas/JuegoBanderas.js"></script>
+
+    <script src="scripts/juegos/juegoPaises/BtnOpcion.js"></script>
+    <script src="scripts/juegos/juegoPaises/JPController.js"></script>
+    <script src="scripts/juegos/juegoPaises/JuegoPaises.js"></script>
+
+    <script src="scripts/juegos/juegoCiudades/PointCiudad.js"></script>
+    <script src="scripts/juegos/juegoCiudades/JCController.js"></script>
+    <script src="scripts/juegos/juegoCiudades/JuegosCiudades.js"></script>
+
+    <script src="scripts/juegos/juegoLugares/BtnOpcionLugares.js"></script>
+    <script src="scripts/juegos/juegoLugares/JLController.js"></script>
+    <script src="scripts/juegos/juegoLugares/JuegoLugares.js"></script>
+
+    <script src="scripts/juegos/resultados/Resultados.js"></script>
+    
+    <script src="scripts/index.js"></script>
+    
+</body>
+</html>
