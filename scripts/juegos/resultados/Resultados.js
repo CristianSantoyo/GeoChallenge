@@ -81,7 +81,7 @@ function Resultados(orquestador, data){
             this.dibujar();
         }, 25);
 
-    }, 250);
+    }, 2000);
        
 
     this.mouseMove = (event)=>{
