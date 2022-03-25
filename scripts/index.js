@@ -50,7 +50,7 @@ $(document).ready(function() {
     //INICIO del juego
 
     var puntajeTotal = 0;
-    var indexJuego = 1;
+    var indexJuego = 2;
 
     this.juego = this.seleccionarJuego(indexJuego);
     this.juego.iniciar();
